@@ -269,7 +269,7 @@ Come, sip, and savor "The taste of loyalty."
             </div>
             <footer class="absolute bottom-0 left-0 w-full">
                 <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
-                    <span>Copyright 2025 ZN-Coffee. All rights reserved.</span>
+                    <span>Copyright <span id="footer-year"></span> ZN-Coffee. All rights reserved.</span>
                     <span class="mt-5 md:mt-0">ZN <a href="https://www.instagram.com/zn_zaana_coffee/" target="_parent">Coffee</a></span>
                 </div>                
             </footer>
@@ -316,6 +316,8 @@ Come, sip, and savor "The taste of loyalty."
                 }
             });
             
+            document.getElementById('footer-year').textContent = new Date().getFullYear();
+
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
