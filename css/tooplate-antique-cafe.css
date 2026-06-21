@@ -147,6 +147,10 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     }
 }
 
+#menu .tm-item-container {
+    max-width: 100%;
+}
+
 @media (max-width: 370px) {
     .tm-menu-item {
         flex-direction: column;
