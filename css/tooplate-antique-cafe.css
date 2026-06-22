@@ -213,6 +213,15 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     transform: scale(1.06);
 }
 
+/* Hide gallery items beyond the first 8 until expanded */
+.tm-gallery-grid .tm-gallery-item:nth-child(n+9) {
+    display: none;
+}
+
+.tm-gallery-grid.show-all .tm-gallery-item {
+    display: block;
+}
+
 @media (max-width: 767px) {
     .tm-gallery-item {
         flex: 1 1 calc(50% - 0.75rem);

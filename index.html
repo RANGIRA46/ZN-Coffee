@@ -309,6 +309,11 @@ Come, sip, and savor "The taste of loyalty."
                 <div class="tm-gallery-item"><video autoplay muted loop playsinline><source src="img/Gallery/gallery-video-04.mp4" type="video/mp4"></video></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-53.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
             </div>
+            <div class="text-center mt-10">
+                <button id="gallery-toggle" onclick="toggleGallery(this)" style="background-color:#ffcc66; color:#1a1008; border:none; padding:0.85rem 2.5rem; font-size:1.1rem; font-weight:600; border-radius:8px; cursor:pointer; transition:background 0.2s;">
+                    <i class="fas fa-images mr-2"></i> View All Photos
+                </button>
+            </div>
         </div>
     </div>
 
@@ -370,6 +375,17 @@ Come, sip, and savor "The taste of loyalty."
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script>
+
+        function toggleGallery(btn) {
+            var grid = document.querySelector('.tm-gallery-grid');
+            var expanded = grid.classList.toggle('show-all');
+            btn.innerHTML = expanded
+                ? '<i class="fas fa-chevron-up mr-2"></i> Show Less'
+                : '<i class="fas fa-images mr-2"></i> View All Photos';
+            if (!expanded) {
+                document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
         function checkAndShowHideMenu() {
             if(window.innerWidth < 768) {
