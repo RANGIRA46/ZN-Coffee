@@ -182,6 +182,24 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 
 #menu .tm-item-container {
     max-width: 100%;
+    padding: 1rem 1.25rem !important;
+}
+
+#menu .tm-item-container h3 {
+    font-size: 1.1rem;
+}
+
+#menu .tm-item-container .text-base {
+    font-size: 0.82rem;
+}
+
+#menu .tm-item-container .flex.items-center.mb-6 {
+    margin-bottom: 0.75rem;
+}
+
+#menu .tm-item-container .flex.justify-between.py-2 {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
 }
 
 .tm-menu-rows .tm-menu-row:nth-child(n+3) {
