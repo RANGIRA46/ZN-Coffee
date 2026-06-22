@@ -179,6 +179,53 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     max-width: 100%;
 }
 
+/* Social icon buttons */
+.tm-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
+}
+
+.tm-social-icon:hover {
+    transform: scale(1.12);
+    color: #fff;
+}
+
+.tm-social-icon-instagram {
+    background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #515bd4 100%);
+    box-shadow: 0 4px 12px rgba(221, 42, 123, 0.35);
+}
+
+.tm-social-icon-instagram:hover {
+    box-shadow: 0 6px 18px rgba(221, 42, 123, 0.5);
+}
+
+.tm-social-icon-whatsapp {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+
+.tm-social-icon-whatsapp:hover {
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+}
+
+.tm-social-icon-maps {
+    background: linear-gradient(135deg, #ff4b2b 0%, #EA4335 100%);
+    box-shadow: 0 4px 12px rgba(234, 67, 53, 0.35);
+}
+
+.tm-social-icon-maps:hover {
+    box-shadow: 0 6px 18px rgba(234, 67, 53, 0.5);
+}
+
 /* Gallery */
 #gallery {
     background-color: #1a1008;
