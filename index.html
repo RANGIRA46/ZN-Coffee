@@ -20,15 +20,11 @@
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
-    
-<!--
-
-
--->
+    <link rel="preload" as="image" href="img/Intro.jpg">
 </head>
 <body>    
     <!-- Intro -->
-    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/Intro.png">
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/Intro.jpg">
         <nav id="tm-nav" class="fixed w-full">
             <div class="tm-container mx-auto px-2 md:py-6 text-right">
                 <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
@@ -67,7 +63,7 @@
         </div>        
     </div>
     <!-- Cafe Menu -->
-    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/Menu.png">
+    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/Menu.jpg">
         <div class="container mx-auto tm-container py-24 sm:py-48">
             <div class="text-center mb-16">
                 <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">ZN Coffee Menu</h2>
@@ -264,7 +260,7 @@ Come, sip, and savor "The taste of loyalty."
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-11.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-12.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-13.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
-                <div class="tm-gallery-item"><video autoplay muted loop playsinline><source src="img/Gallery/gallery-video-01.mp4" type="video/mp4"></video></div>
+                <div class="tm-gallery-item"><video autoplay muted loop playsinline preload="none"><source src="img/Gallery/gallery-video-01.mp4" type="video/mp4"></video></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-14.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-15.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-16.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
@@ -278,7 +274,7 @@ Come, sip, and savor "The taste of loyalty."
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-24.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-25.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-26.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
-                <div class="tm-gallery-item"><video autoplay muted loop playsinline><source src="img/Gallery/gallery-video-02.mp4" type="video/mp4"></video></div>
+                <div class="tm-gallery-item"><video autoplay muted loop playsinline preload="none"><source src="img/Gallery/gallery-video-02.mp4" type="video/mp4"></video></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-27.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-28.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-29.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
@@ -292,7 +288,7 @@ Come, sip, and savor "The taste of loyalty."
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-37.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-38.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-39.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
-                <div class="tm-gallery-item"><video autoplay muted loop playsinline><source src="img/Gallery/gallery-video-03.mp4" type="video/mp4"></video></div>
+                <div class="tm-gallery-item"><video autoplay muted loop playsinline preload="none"><source src="img/Gallery/gallery-video-03.mp4" type="video/mp4"></video></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-40.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-41.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-42.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
@@ -306,7 +302,7 @@ Come, sip, and savor "The taste of loyalty."
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-50.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-51.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-52.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
-                <div class="tm-gallery-item"><video autoplay muted loop playsinline><source src="img/Gallery/gallery-video-04.mp4" type="video/mp4"></video></div>
+                <div class="tm-gallery-item"><video autoplay muted loop playsinline preload="none"><source src="img/Gallery/gallery-video-04.mp4" type="video/mp4"></video></div>
                 <div class="tm-gallery-item"><img src="img/Gallery/gallery-53.jpeg" alt="ZN Coffee" loading="lazy" decoding="async"></div>
             </div>
             <div class="text-center mt-10">
@@ -382,7 +378,10 @@ Come, sip, and savor "The taste of loyalty."
             btn.innerHTML = expanded
                 ? '<i class="fas fa-chevron-up mr-2"></i> Show Less'
                 : '<i class="fas fa-images mr-2"></i> View All Photos';
-            if (!expanded) {
+            if (expanded) {
+                grid.querySelectorAll('video').forEach(function(v) { v.load(); v.play(); });
+            } else {
+                grid.querySelectorAll('video').forEach(function(v) { v.pause(); });
                 document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
             }
         }
