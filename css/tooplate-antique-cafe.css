@@ -184,6 +184,14 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     max-width: 100%;
 }
 
+.tm-menu-rows .tm-menu-row:nth-child(n+3) {
+    display: none;
+}
+
+.tm-menu-rows.show-all .tm-menu-row {
+    display: flex;
+}
+
 /* Social icon buttons */
 .tm-social-icon {
     display: inline-flex;

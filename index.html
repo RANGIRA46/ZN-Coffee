@@ -69,8 +69,9 @@
                 <h2 class="bg-black bg-opacity-70 text-white py-6 px-12 text-4xl font-medium inline-block rounded-lg">ZN Coffee Menu</h2>
             </div>
 
+            <div class="tm-menu-rows">
             <!-- Row 1: Coffee + Cold Coffee -->
-            <div class="flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
+            <div class="tm-menu-row flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
                 <!-- Coffee -->
                 <div class="flex-1 rounded-xl px-6 py-8 sm:px-8 sm:py-10 bg-black bg-opacity-70 tm-item-container">
                     <div class="flex items-center mb-6">
@@ -108,7 +109,7 @@
             </div>
 
             <!-- Row 2: Tea + Milkshakes -->
-            <div class="flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
+            <div class="tm-menu-row flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
                 <!-- Tea -->
                 <div class="flex-1 rounded-xl px-6 py-8 sm:px-8 sm:py-10 bg-black bg-opacity-70 tm-item-container">
                     <div class="flex items-center mb-6">
@@ -143,7 +144,7 @@
             </div>
 
             <!-- Row 3: Smoothies + Juices -->
-            <div class="flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
+            <div class="tm-menu-row flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
                 <!-- Smoothies -->
                 <div class="flex-1 rounded-xl px-6 py-8 sm:px-8 sm:py-10 bg-black bg-opacity-70 tm-item-container">
                     <div class="flex items-center mb-6">
@@ -173,7 +174,7 @@
             </div>
 
             <!-- Row 4: Ice Cream + Beverages -->
-            <div class="flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
+            <div class="tm-menu-row flex flex-col lg:flex-row items-stretch mb-6" style="gap:1.5rem">
                 <!-- Ice Cream Per Cup -->
                 <div class="flex-1 rounded-xl px-6 py-8 sm:px-8 sm:py-10 bg-black bg-opacity-70 tm-item-container">
                     <div class="flex items-center mb-6">
@@ -215,6 +216,12 @@
                 </div>
             </div>
 
+            </div><!-- end tm-menu-rows -->
+            <div class="text-center mt-10">
+                <button id="menu-toggle" onclick="toggleMenu(this)" class="bg-black bg-opacity-70 tm-text-gold font-semibold rounded-lg transition hover:bg-opacity-90" style="border:none; padding:0.6rem 1.75rem; font-size:0.95rem; cursor:pointer;">
+                    <i class="fas fa-utensils mr-2"></i> View More
+                </button>
+            </div>
         </div>
     </div>
     <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-03.jpg">
@@ -371,6 +378,17 @@ Come, sip, and savor "The taste of loyalty."
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script>
+
+        function toggleMenu(btn) {
+            var rows = document.querySelector('.tm-menu-rows');
+            var expanded = rows.classList.toggle('show-all');
+            btn.innerHTML = expanded
+                ? '<i class="fas fa-chevron-up mr-2"></i> Show Less'
+                : '<i class="fas fa-utensils mr-2"></i> View More';
+            if (!expanded) {
+                document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
         function toggleGallery(btn) {
             var grid = document.querySelector('.tm-gallery-grid');
