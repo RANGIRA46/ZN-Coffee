@@ -105,20 +105,25 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 #tm-nav {
     z-index: 1000;
     transition: all 0.3s ease;
+    background: linear-gradient(to bottom, rgba(30,12,2,0.6) 0%, transparent 100%);
 }
 
 #tm-nav.scroll {
-    background-color: rgba(0,0,0,0.7);
+    background: rgba(30,12,2,0.88);
 }
 
 #tm-nav li a {
+    color: #F5E2B8;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.75);
     border-bottom-color: transparent;
     transition: all 0.3s ease;
 }
 
 #tm-nav li a.current,
 #tm-nav li a:hover {
-      border-bottom: 4px solid #CC9966;
+    color: #FFCC66;
+    border-bottom: 4px solid #FFCC66;
+    text-shadow: 0 1px 8px rgba(255,180,50,0.5);
 }
 
 .tm-text-2xl {
