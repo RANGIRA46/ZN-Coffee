@@ -291,6 +291,30 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     transform: scale(1.06);
 }
 
+/* Expressions / Reviews */
+.tm-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1008;
+    flex-shrink: 0;
+}
+
+.tm-bg-gold {
+    background-color: #FFCC66;
+}
+
+.tm-stars {
+    color: #FFCC66;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
 /* Hide gallery items beyond the first 8 until expanded */
 .tm-gallery-grid .tm-gallery-item:nth-child(n+9) {
     display: none;

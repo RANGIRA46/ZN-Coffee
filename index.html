@@ -33,6 +33,7 @@
                     <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
                     <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
                     <li class="inline-block mb-4 mx-4"><a href="#gallery" class="tm-text-gold py-1 md:py-3 px-4">Gallery</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#expressions" class="tm-text-gold py-1 md:py-3 px-4">Reviews</a></li>
                     <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
                 </ul>
             </div>            
@@ -316,6 +317,75 @@ Come, sip, and savor "The taste of loyalty."
                 <button id="gallery-toggle" onclick="toggleGallery(this)" class="bg-black bg-opacity-70 tm-text-gold font-semibold rounded-lg transition hover:bg-opacity-90" style="border:none; padding:0.6rem 1.75rem; font-size:0.95rem; cursor:pointer;">
                     <i class="fas fa-images mr-2"></i> View All Photos
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expressions / Reviews -->
+    <div id="expressions" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-02.jpg">
+        <div class="container mx-auto tm-container py-24 sm:py-32 px-4">
+            <div class="text-center mb-16">
+                <h2 class="bg-black bg-opacity-70 text-white py-6 px-12 text-4xl font-medium inline-block rounded-lg">Client Expressions</h2>
+            </div>
+
+            <!-- Testimonial cards -->
+            <div class="flex flex-col lg:flex-row items-stretch mb-14" style="gap:1.5rem">
+                <div class="flex-1 rounded-xl p-8 bg-black bg-opacity-70">
+                    <div class="flex items-center mb-4">
+                        <div class="tm-avatar tm-bg-gold mr-4">A</div>
+                        <div>
+                            <p class="text-white font-semibold">Alice M.</p>
+                            <span class="tm-stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="text-white leading-7 text-sm">"The best coffee in Kigali! The atmosphere is cozy and the staff are so friendly. I always come back for more."</p>
+                </div>
+                <div class="flex-1 rounded-xl p-8 bg-black bg-opacity-70">
+                    <div class="flex items-center mb-4">
+                        <div class="tm-avatar tm-bg-gold mr-4">J</div>
+                        <div>
+                            <p class="text-white font-semibold">James K.</p>
+                            <span class="tm-stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="text-white leading-7 text-sm">"Amazing smoothies and a very relaxing spot. ZN Coffee truly lives up to 'The Taste of Loyalty'. Highly recommended!"</p>
+                </div>
+                <div class="flex-1 rounded-xl p-8 bg-black bg-opacity-70">
+                    <div class="flex items-center mb-4">
+                        <div class="tm-avatar tm-bg-gold mr-4">S</div>
+                        <div>
+                            <p class="text-white font-semibold">Sophie R.</p>
+                            <span class="tm-stars">★★★★☆</span>
+                        </div>
+                    </div>
+                    <p class="text-white leading-7 text-sm">"Love the ice cream and the cold brew! The space is beautiful and perfect for working or meeting friends."</p>
+                </div>
+            </div>
+
+            <!-- Submission form -->
+            <div class="max-w-2xl mx-auto rounded-xl p-10 bg-black bg-opacity-70">
+                <h3 class="text-2xl font-semibold tm-text-gold mb-2">Share Your Experience</h3>
+                <p class="text-white text-sm mb-8 opacity-75">We'd love to hear what you think. Leave us your expression!</p>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" />
+                    <select name="rating" required
+                        class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" style="background:transparent;">
+                        <option value="" disabled selected style="color:#333">Your Rating</option>
+                        <option value="5 stars" style="color:#333">★★★★★ — Excellent</option>
+                        <option value="4 stars" style="color:#333">★★★★☆ — Very Good</option>
+                        <option value="3 stars" style="color:#333">★★★☆☆ — Good</option>
+                        <option value="2 stars" style="color:#333">★★☆☆☆ — Fair</option>
+                        <option value="1 star"  style="color:#333">★☆☆☆☆ — Poor</option>
+                    </select>
+                    <textarea rows="5" name="expression" placeholder="Tell us about your experience..." required
+                        class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-6 tm-border-gold"></textarea>
+                    <div class="text-right">
+                        <button type="submit" class="bg-black bg-opacity-70 tm-text-gold font-semibold rounded-lg transition hover:bg-opacity-90" style="border:none; padding:0.6rem 1.75rem; font-size:0.95rem; cursor:pointer;">
+                            <i class="fas fa-paper-plane mr-2"></i> Submit
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
