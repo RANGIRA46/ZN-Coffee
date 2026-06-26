@@ -9,7 +9,7 @@
     <meta property="og:title" content="ZN Coffee – The Taste of Loyalty">
     <meta property="og:description" content="A cozy café in Kigali, Rwanda. Premium coffee, teas, smoothies, milkshakes and more. Visit us today!">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img/antique-cafe-bg-01.jpg">
+    <meta property="og:image" content="img/logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ZN Coffee – The Taste of Loyalty">
     <meta name="twitter:description" content="A cozy café in Kigali, Rwanda. Premium coffee, teas, smoothies, milkshakes and more.">
@@ -21,27 +21,33 @@
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
     <link rel="preload" as="image" href="img/Intro.jpg">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 </head>
 <body>    
     <!-- Intro -->
     <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/Intro.jpg">
         <nav id="tm-nav" class="fixed w-full">
-            <div class="tm-container mx-auto px-2 md:py-6 text-right">
-                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
-                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
-                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#gallery" class="tm-text-gold py-1 md:py-3 px-4">Gallery</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
-                </ul>
-            </div>            
+            <div class="tm-container mx-auto px-4 md:py-3 flex items-center justify-between">
+                <a href="#intro" class="flex-shrink-0">
+                    <img src="img/logo.png" alt="ZN Coffee" style="height:52px; width:auto; border-radius:8px;">
+                </a>
+                <div class="flex items-center">
+                    <button class="md:hidden py-2 px-2 ml-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+                    <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                        <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
+                        <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
+                        <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
+                        <li class="inline-block mb-4 mx-4"><a href="#gallery" class="tm-text-gold py-1 md:py-3 px-4">Gallery</a></li>
+                        <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="container mx-auto px-2 tm-intro-width">
             <div class="sm:pb-60 sm:pt-48 py-20">
-                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
-                    <h1 class="text-white text-5xl tm-logo-font mb-5">ZN Coffee</h1>
-                    <p class="tm-text-gold tm-text-2xl">The Taste of Loyalty</p>
+                <div class="bg-black bg-opacity-70 p-8 mb-5 text-center">
+                    <img src="img/logo.png" alt="ZN Coffee" style="height:140px; width:auto; border-radius:10px; margin:0 auto 0.75rem;">
                 </div>    
                 <div class="bg-black bg-opacity-70 p-10 mb-5">
                     <p class="text-white leading-8 text-sm font-light">
@@ -366,7 +372,7 @@ Come, sip, and savor "The taste of loyalty."
             <footer class="absolute bottom-0 left-0 w-full">
                 <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
                     <span>Copyright <span id="footer-year"></span> ZN-Coffee. All rights reserved.</span>
-                    <span class="mt-5 md:mt-0">ZN <a href="https://www.instagram.com/zn_zaana_coffee/" target="_parent">Coffee</a></span>
+                    <a href="#intro"><img src="img/logo.png" alt="ZN Coffee" style="height:40px; width:auto; border-radius:6px; opacity:0.85;"></a>
                 </div>                
             </footer>
         </div>        
