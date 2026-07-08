@@ -1,0 +1,13 @@
+{
+  "name": "ZN Coffee",
+  "short_name": "ZN Coffee",
+  "description": "The Taste of Loyalty — Café in Kigali, Rwanda",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1008",
+  "theme_color": "#FFCC66",
+  "icons": [
+    { "src": "/img/favicon.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
