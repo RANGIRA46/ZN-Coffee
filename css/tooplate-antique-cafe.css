@@ -353,3 +353,50 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
         margin-bottom: 10px;
     }
 }
+
+/* Lightbox */
+#tm-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.93);
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#tm-lightbox.active { display: flex; }
+#tm-lightbox-content img {
+    max-width: 90vw;
+    max-height: 78vh;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+}
+#tm-lightbox-close {
+    position: absolute;
+    top: 1.25rem; right: 1.5rem;
+    background: none; border: none;
+    color: #fff; font-size: 1.75rem; cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+}
+#tm-lightbox-close:hover { color: #FFCC66; }
+#tm-lightbox-prev, #tm-lightbox-next {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    background: rgba(255,255,255,0.1); border: none;
+    color: #fff; font-size: 1.5rem; cursor: pointer;
+    padding: 0.75rem 1.1rem; border-radius: 6px;
+    transition: background 0.2s;
+}
+#tm-lightbox-prev:hover, #tm-lightbox-next:hover { background: rgba(255,204,102,0.25); color: #FFCC66; }
+#tm-lightbox-prev { left: 1rem; }
+#tm-lightbox-next { right: 1rem; }
+#tm-lightbox-counter {
+    color: #FFCC66;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.tm-gallery-item img { cursor: pointer; }
