@@ -469,6 +469,7 @@ Come, sip, and savor "The taste of loyalty."
             btn.innerHTML = expanded
                 ? '<i class="fas fa-chevron-up mr-2"></i> Show Less'
                 : '<i class="fas fa-images mr-2"></i> View All Photos';
+            $(window).trigger('resize');
             if (expanded) {
                 grid.querySelectorAll('video').forEach(function(v) { v.load(); v.play(); });
             } else {
