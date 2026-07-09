@@ -264,9 +264,10 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 /* Gallery */
-#gallery {
-    background-color: #1a1008;
-    padding: 3rem 0;
+#gallery.parallax-window {
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .tm-gallery-grid {
