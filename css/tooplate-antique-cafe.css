@@ -40,6 +40,12 @@ footer span a { color: #FFF; }
     background: transparent;
 }
 
+#menu.parallax-window {
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
 .tm-text-yellow {
     color: #FC6;
 }

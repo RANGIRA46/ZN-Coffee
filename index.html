@@ -449,6 +449,7 @@ Come, sip, and savor "The taste of loyalty."
             btn.innerHTML = expanded
                 ? '<i class="fas fa-chevron-up mr-2"></i> Show Less'
                 : '<i class="fas fa-utensils mr-2"></i> View More';
+            $(window).trigger('resize');
             if (!expanded) {
                 document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
             }
