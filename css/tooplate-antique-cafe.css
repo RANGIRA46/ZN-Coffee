@@ -10,6 +10,15 @@ https://www.tooplate.com/view/2126-antique-cafe
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #666;
+    overflow-x: hidden;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 p a {
